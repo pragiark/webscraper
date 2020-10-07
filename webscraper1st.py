@@ -16,7 +16,7 @@ for link in links:
     if link not in wwwlist[url] and link.startswith("http"):
         wwwlist[url].append(link)
 
-#itteration list in dictionary
+# itteration list in dictionary
 for listlink in wwwlist[url]:
     if listlink not in wwwlist.keys() and listlink.startswith("https://"):
         wwwlist[listlink] = []
@@ -36,7 +36,7 @@ for listlink in wwwlist[url]:
 #             print(linkasy)
 
 # write list in vertical
-for k ,v in wwwlist.items():
+for k, v in wwwlist.items():
     print("Na postronie: " + str(k) + " sa linki:")
     for linkasy in v:
         print(linkasy)
